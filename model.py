@@ -10,7 +10,7 @@ import pickle
 
 def generateAI():
 
-    data=pd.read_csv('data(1).csv')
+    data=pd.read_csv('vamsi.csv')
 
     X=data.iloc[:,:-1].values
 
@@ -29,5 +29,6 @@ def generateAI():
     accuracy_score(y_test,y_ai)
 
     pickle.dump(ai,open('ai.pkl','wb'))
+
 
     print('AI Model is Created')
